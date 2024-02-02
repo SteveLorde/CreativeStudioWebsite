@@ -1,0 +1,16 @@
+{
+  "name": "creativestudiowebsite",
+  "version": "1.0.0",
+  "description": "Static Website demonstration for advanced styling and 3D",
+  "source": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.11.0"
+  }
+}
