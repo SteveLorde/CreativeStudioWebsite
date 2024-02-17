@@ -5,25 +5,47 @@
     <title>Title</title>
     <link rel="stylesheet" href="style.css" />
     <script type="module" src="main.js"></script>
+    <script type="module" src="navmenufunction.js"></script>
 </head>
 <body>
     <section>
-        <div>
-            <img src="assets/blueprintersbluelogo.svg" />
-            <ul>
-                <li><a href="/"></a></li>
-                <li><a href="/projects"></a></li>
-                <li><a href="/contact"></a></li>
+
+        <!--Mobile Bar-->
+        <div class="MobileBar bg-navbarbackground bg-center flex sm:hidden flex-row items-center bg-amber-100 ">
+            <!--Menu Button-->
+            <img class="w-64" src="assets/blueprintersbluelogo.svg" />
+            <!--Mobile Nav Menu-->
+            <button onclick="ToggleMobileMenu()">MENU</button>
+        </div>
+        <div id="MobileMenu" class="hidden sm:hidden flex-col items-center bg-amber-100 ease-in-out delay-300">
+            <ul class="flex flex-col items-center">
+                <li><a class="font-bold">Home</a></li>
+                <li><a class="font-bold">Projects</a></li>
+                <li><a class="font-bold">Contact</a></li>
             </ul>
         </div>
+
+        <!--Desktop Bar-->
+        <div class="hidden bg-navbarbackground bg-center lg:flex bg-amber-100 flex-row items-center pl-32 pr-32 justify-between">
+            <img class="w-32" src="assets/blueprintersbluelogo.svg" />
+            <ul class="flex flex-row items-center gap-6">
+                <li><a class="font-bold" href="/">Home</a></li>
+                <li><a class="font-bold" href="/projects">Projects</a></li>
+                <li><a class="font-bold" href="/contact">Contact</a></li>
+            </ul>
+        </div>
+
     </section>
+
 
     <section>
 
     </section>
 
     <section>
+        <div>
 
+        </div>
     </section>
 </body>
 </html>

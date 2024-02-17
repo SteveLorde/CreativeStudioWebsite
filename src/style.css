@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --page-backgroundcolor: rgb(19, 37, 54);
+}
+
+
+body {
+    background-color: var(--page-backgroundcolor);
+    background-size: 20px 20px;
+    background-image:
+            linear-gradient(to right, grey 1px, transparent 1px),
+            linear-gradient(to bottom, grey 1px, transparent 1px);
+}
+
+
+
