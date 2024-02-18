@@ -22,3 +22,6 @@ function animate() {
     renderer.render( scene, camera );
 }
 animate();
+
+const ourlocationelement = document.getElementById("3DPlanet")
+
